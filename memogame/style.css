@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#game-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+}
+
+#status-bar {
+    z-index: 30;
+    position: relative;
+    pointer-events: auto;
+}
+
+.speed-btn {
+    pointer-events: auto;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: white;
+    transition: background-color 0.3s;
+}
+
+.speed-btn.active {
+    background: #90EE90;
+}
+
+
+#messages {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: rgb(226, 219, 219);
+}
+
+#pad-container {
+    position: relative;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pad {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: filter 0.2s, background-color 0.2s, color 0.2s;
+    font-weight: bold;
+    color: rgb(19, 18, 18);
+}
+
+.pad:hover {
+    filter: brightness(1.5);
+    transform: scale(1.1);
+}
+
+.pad.highlighted {
+    background-color: rgb(202, 130, 193);
+    color: black;
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.pad.active {
+    filter: brightness(2);
+    background-color: #FFA500;
+    color: white;
+}
+
+#bottom-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.control-btn {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: white;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.control-btn:hover {
+    background: #90EE90;
+}
