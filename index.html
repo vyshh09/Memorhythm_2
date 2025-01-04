@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorhythm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+       
+
+        <div id="status-bar">
+            <button class="speed-btn active" data-speed="normal">Normal</button>
+            <button class="speed-btn" data-speed="slow">Slow</button>
+            <button class="speed-btn" data-speed="fast">Fast</button>
+        </div>
+        
+
+        <div id="messages">
+            <div id="level-text">Level 1 - Mistakes: 0</div>
+            <div id="game-message"></div>
+            <div id="sequence-message"></div>
+        </div>
+
+        <div id="pad-container"></div>
+
+        <div id="bottom-controls">
+            <button class="control-btn" id="restart-btn">Restart</button>
+            <button class="control-btn" id="quit-btn">Quit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
